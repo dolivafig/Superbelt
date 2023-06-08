@@ -1,10 +1,9 @@
 {
-  "name": "superbelt-store",
+  "name": "mern-shopping",
   "version": "1.0.0",
-  "engines": { "node": "16.19.1", "npm": "8.19.3" },
+  "engines": { "node": "16.19.1"  },
   "description": "",
   "main": "server/server.js",
-  "heroku-postbuild": "cd client && npm install && npm run build",
   "scripts": {
     "start": "node server --ignore client",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
