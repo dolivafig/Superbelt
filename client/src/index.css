@@ -88,6 +88,9 @@ header a {
 }
 
 button {
+  display: inline-flex;
+  justify-content: right;
+  height: 28px;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -95,7 +98,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
+  margin: 0 4px;
   background-color: var(--secondary);
 }
 
