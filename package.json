@@ -1,6 +1,7 @@
 {
   "name": "mern-shopping",
   "version": "1.0.0",
+  "engines": { "node": "16.19.1"  },
   "description": "",
   "main": "server/server.js",
   "scripts": {
