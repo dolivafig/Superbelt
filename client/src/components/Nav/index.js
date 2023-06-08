@@ -46,7 +46,7 @@ function Nav() {
           Superbelt Store
         </Link>
       </h1>
-
+    
       <nav>
         {showNavigation()}
       </nav>

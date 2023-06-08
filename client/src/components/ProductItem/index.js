@@ -11,6 +11,7 @@ function ProductItem(item) {
   const {
     image,
     name,
+    car,
     _id,
     price,
     quantity
@@ -51,10 +52,13 @@ function ProductItem(item) {
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
+<div> Applications: </div>
+<div id='application'>
+<span id='carSpan'> {car}</span>
+        </div>
       </div>
       <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
-
 export default ProductItem;

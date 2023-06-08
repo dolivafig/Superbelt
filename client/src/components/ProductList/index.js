@@ -51,6 +51,7 @@ function ProductList() {
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}
+              car={product.car}
               _id={product._id}
               image={product.image}
               name={product.name}
