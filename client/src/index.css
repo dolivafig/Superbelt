@@ -111,8 +111,8 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 4px;
-  /* background-image: linear-gradient(to bottom right, #F3A847, blue); */
+  margin: 0px 4px;
+  margin-bottom: 15px;
   background-color: var(--secondary);
 }
 
@@ -153,8 +153,8 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
 }
