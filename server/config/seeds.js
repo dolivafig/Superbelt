@@ -51,7 +51,7 @@ db.once('open', async () => {
       name: '5PK1145',
       description:
       'Super Belt 5PK1145 Performance Serpentine Belt',
-      image: '5PK1145.png',
+      image: '5pk1145.png',
       category: categories[1]._id,
       price: 21.99,
       quantity: 50,
