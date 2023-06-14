@@ -85,6 +85,10 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1">
+          <div className="det">
+
+          <div className="detailCard">
+
           <Link to="/">← Back to Products</Link>
 
           <h2>{currentProduct.name}</h2>
@@ -97,7 +101,7 @@ function Detail() {
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
-            >
+              >
               Remove from Cart
             </button>
           </p>
@@ -105,7 +109,18 @@ function Detail() {
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
-          />
+            />
+            </div>
+
+            <div>
+          <img
+            class='catalog'
+            src={'/images/Catalog.png'}
+            alt={currentProduct.name}
+            />
+            </div>
+            </div>
+          
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}

@@ -9,11 +9,11 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
-      car
+      car 
       category {
-        _id
-      }
-    }
+            _id
+                } 
+            }
   }
 `;
 
@@ -33,7 +33,7 @@ export const QUERY_ALL_PRODUCTS = gql`
       description
       price
       quantity
-      car
+      car 
       category {
         name
       }

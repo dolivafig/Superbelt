@@ -33,8 +33,23 @@ const productSchema = new Schema({
     type: String,
     required: true
   }
+  // set this to use virtual below
+  // {
+  //   toJSON: {
+  //     virtuals: true,
+  //   },
+  // }
 });
 
+// userSchema.virtual('application').get(function () {
+//   const application = {
+//     make : car.make,
+//     model : car.model,
+//     year : car.year,
+//     engine : car.engine
+//   }
+//   return application;
+// });
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;

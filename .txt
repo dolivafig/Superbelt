@@ -1,0 +1,193 @@
+// await Car.deleteMany();
+
+  // const cars = await Car.insertMany([
+  //   { make:'FORD' ,
+  //   model: 'MUSTANG',
+  //   year: '2012',
+  //   engine: '3.7L_V6' },
+  //   { make:'TOYOTA' ,
+  //   model: 'CAMRY',
+  //   year: '2003-2005',
+  //   engine: '3.0L' },
+  //   {   make:'CHEVROLET' ,
+  //   model: 'SILVERADO_1500',
+  //   year: '2000',
+  //   engine: '5.3L_V8'},
+  //   { make:'TOYOTA' ,
+  //     model: 'CAMRY',
+  //     year: '2003-2005',
+  //     engine: '3.0L' },
+  //   {       make:'FORD' ,
+  //   model: 'F150',
+  //   year: '2012-2018',
+  //   engine: '3.3L' },
+  //   {       make:'HONDA' ,
+  //   model: 'ACCORD',
+  //   year: '2003, 2008, 2012',
+  //   engine: '3.0L/3.5L'},
+  //   {     make:'JEEP' ,
+  //   model: 'WRANGLER',
+  //   year: '2012',
+  //   engine: '3.6L_V6'},
+  //   {       make:'JEEP' ,
+  //   model: 'WRANGLER',
+  //   year: '2012',
+  //   engine: '3.6L_V6' },
+  //   {       make:'TOYOTA' ,
+  //   model: 'TACOMA',
+  //   year: '2005-2010',
+  //   engine: '2.7L' },
+  //   {     quantity: 5,
+  //     make:'TOYOTA' ,
+  //       model: 'CAMRY',
+  //       year: '2003-2005',
+  //       engine: '2.4L'},
+  //   {       make:'TOYOTA' ,
+  //   model: 'CAMRY',
+  //   year: '2003-2005',
+  //   engine: '2.4L' }
+  // ]);
+
+  // console.log('cars seeded');
+
+
+----------------------------------------------------
+//   {
+//     name: '4PK925',
+//     description:
+//       'Super Belt 4PK925 Performance Serpentine Belt',
+//     image: '4PK925.jpg',
+//     category: categories[0]._id,
+//     price: 10.99,
+//     quantity: 50,
+//     car: cars[0]._id
+//   }, 
+//   {
+//     name: '4PK960',
+//     description:
+//       'Super Belt 4PK960 Performance Serpentine Belt',
+//     image: '4PK960.jpg',
+//     category: categories[0]._id,
+//     price: 11.99,
+//     quantity: 50,
+//     car: cars[1]._id
+//   },
+//   {
+//     name: '4PK880',
+//     description:
+//       'Super Belt 4PK880 Performance Serpentine Belt',
+//     image: '4PK880.jpg',
+//     category: categories[0]._id,
+//     price: 11.99,
+//     quantity: 50,
+//     car: cars[2]._id
+//   },
+//   {
+//     name: '5PK1145',
+//     description:
+//     'Super Belt 5PK1145 Performance Serpentine Belt',
+//     image: '5PK1145.png',
+//     category: categories[1]._id,
+//     price: 21.99,
+//     quantity: 50,
+//     car: cars[3]._id
+
+//   },
+//   {
+//     name: '6PK1390',
+//     category: categories[2]._id,
+//     description:
+//     'Super Belt 6PK1390 Performance Serpentine Belt',
+//     image: '6PK1390.jpg',
+//     price: 17.99,
+//     quantity: 20,
+//     car: cars[4]._id
+//   },
+//   {
+//     name: '6PK2135',
+//     category: categories[2]._id,
+//     description:
+//     'Super Belt 6PK2135 Performance Serpentine Belt',
+//     image: '6PK2135.jpg',
+//     price: 19.99,
+//     quantity: 25,
+//     car: cars[5]._id
+
+//   },
+//   {
+//     name: '6PK2225',
+//     category: categories[2]._id,
+//     description:
+//     'Super Belt 6PK2225 Performance Serpentine Belt',
+//     image: '6PK2225.jpg',
+//     price: 22.99,
+//     quantity: 15,
+//     car: cars[6]._id
+//   },
+//   {
+//     name: '6PK2455',
+//     category: categories[2]._id,
+//     description:
+//     'Super Belt 6PK2455 Performance Serpentine Belt',
+//     image: '6PK2455.jpg',
+//     price: 26.99,
+//     quantity: 15,
+//     car: cars[7]._id
+//   },
+//   {
+//     name: '7PK1870',
+//     category: categories[3]._id,
+//     description:
+//     'Super Belt 7PK1870 Performance Serpentine Belt',
+//     image: '7PK1870.jpg',
+//     price: 28.99,
+//     quantity: 10,
+//     car: cars[8]._id
+//   },
+//   {
+//   name: '7PK1935',
+//   category: categories[3]._id,
+//   description:
+//   'Super Belt 7PK1935 Performance Serpentine Belt',
+//   image: '7PK1935.jpg',
+//   price: 29.99,
+//   car: cars[9]._id
+// },
+//   {
+//     name: '8PK1675',
+//     category: categories[4]._id,
+//     description:
+//     'Super Belt 8PK1675 Performance Serpentine Belt',
+//     image: '8PK1675.jpg',
+//     price: 14.99,
+//     quantity: 10,
+//     car: cars[10]._id
+//   }
+
+---------------------------
+// const mongoose = require('mongoose');
+
+// const { Schema } = require('mongoose');
+
+// const carSchema = new Schema({
+//     make: {
+//         type: String,
+//         required: true,
+//         trim: true
+//     },
+//     model: {
+//         type: String,
+//         required: true
+//     },
+//     year: {
+//         type: String,
+//         required: true
+//     },
+//     engine: {
+//         type: String,
+//         required: false,
+//     }}
+// );
+// const Car = mongoose.model('Car', carSchema);
+
+// module.exports = Car;

@@ -13,7 +13,9 @@ import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import About from './pages/About';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
@@ -58,6 +60,10 @@ function App() {
                 element={<Signup />} 
               />
               <Route 
+                path="/about" 
+                element={<About />} 
+              />
+              <Route 
                 path="/success" 
                 element={<Success />} 
               />
@@ -74,6 +80,7 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
+          <Footer />
           </StoreProvider>
         </div>
       </Router>
